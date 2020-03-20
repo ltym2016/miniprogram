@@ -1,4 +1,11 @@
 <!--pages/home/home.wxml-->
-<text class="title">首页</text>
-<button size="mini" class="button">点击</button>
-<image src="/images/ic_home.png"></image>
+<!-- 1.数据绑定 {{}}  mustache -->
+<view>hello {{1 +20}}</view>
+
+<!-- 2. -->
+<!-- <view>name:{{list[0].name}} + {{list[1].age}}</view> -->
+<view wx:for="{{list}}">{{item.id}}-{{item.name}}</view>
+
+<!-- 3.事件监听 -->
+<view>当前计数：{{count}}</view>
+<button size="mini" bindtap="btnClick">+</button>
