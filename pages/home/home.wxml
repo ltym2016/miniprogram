@@ -1,0 +1,4 @@
+<!--pages/home/home.wxml-->
+<text class="title">首页</text>
+<button size="mini" class="button">点击</button>
+<image src="/images/ic_home.png"></image>
