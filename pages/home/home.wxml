@@ -8,4 +8,60 @@
 
 <!-- 3.事件监听 -->
 <view>当前计数：{{count}}</view>
-<button size="mini" bindtap="btnClick">+</button>
+<button size="mini" 
+        type="warn"
+        bindtap="btnClick"
+        loading>+</button>
+<!-- 4.获取用户信息的第二种方式 -->
+<button size="mini" 
+        open-type="getUserInfo"
+        bindgetuserinfo="btnGetUserInfo">获取用户信息</button>
+<!-- 5.获取用户信息的第三种方式 -->
+<open-data type="userNickName"/>
+
+<view class="box"
+      hover-class="box1"
+      hover-stay-time="0">哈哈</view>
+
+<button bindtap="sekectImage">选择照片</button>
+<!-- 图片组件 lazy-load 懒加载-->
+<image wx:for="{{1}}" 
+       mode="widthFix"
+       src="https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1584935590199&di=18fe5b748ef54ec48ac6e480106bd77a&imgtype=0&src=http%3A%2F%2Fpic1.win4000.com%2Fwallpaper%2F2018-01-30%2F5a7018031beb6.jpg"
+       bindload="loadComplete"
+       lazy-load/>
+<!-- 图片组件 长按-->
+<view>------------image-------------</view>
+<image 
+       class="image_test"
+       wx:for="{{1}}" 
+       mode="aspectFill"
+       src="https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1584935590199&di=18fe5b748ef54ec48ac6e480106bd77a&imgtype=0&src=http%3A%2F%2Fpic1.win4000.com%2Fwallpaper%2F2018-01-30%2F5a7018031beb6.jpg"
+       bindload="loadComplete"
+       lazy-load
+       show-menu-by-longpress/>
+<view>------------input-------------</view>
+<!-- input组件使用 -->
+<input placeholder="请输入"></input>
+<input password></input>
+<!-- input绑定事件 -->
+<input 
+    bindinput="bindinput"
+    bindfocus="bindfocus"
+    bindblur="bindblur"></input>
+<view>------------scroll-view 水平滚动-------------</view>
+<scroll-view class="container1" scroll-x>
+   
+   <view wx:for="{{10}}" class="item1">{{item}}</view>
+
+</scroll-view>
+<view>------------scroll-view 垂直滚动-------------</view>
+<scroll-view class="container2" 
+             scroll-y
+             bindscroll="bindScroll">
+   
+   <view wx:for="{{10}}" class="item2">{{item}}</view>
+
+</scroll-view>
+<view>------------获取网络数据-------------</view>
+<view wx:for="{{newlist}}">{{item.title}}</view>

@@ -1,3 +1,6 @@
+
+const app = getApp()
+
 // pages/home/home.js
 Page({
 
@@ -12,10 +15,11 @@ Page({
       { id: 3, name: "lius3", age: 13 },
       { id: 4, name: "lius4", age: 14 }
     ],
-    count:0
+    count:0,
+    newlist:[]
   },
 
-  btnClick() {
+  btnClick(event) {
     // 这种做法界面不会刷新
     // this.data.count++,
     // console.log("点击按钮" + this.data.count)
@@ -24,13 +28,27 @@ Page({
     this.setData({
       count:this.data.count+1
     })
+
+    console.log(app.globalData.age+app.globalData.name)
   },
 
+  btnGetUserInfo (event) {
+    console.log(event)
+  },
   /**
    * 生命周期函数--监听页面加载
    */
   onLoad: function (options) {
-
+    wx.request({
+      url: 'http://job.wdwfrh.cn/api/partjob/index',
+      success:(res)=>{
+        console.log(res)
+        this.setData({
+          newlist : res.data.data.list
+        })
+      }
+    })
+    
   },
 
   /**
@@ -44,7 +62,6 @@ Page({
    * 生命周期函数--监听页面显示
    */
   onShow: function () {
-
   },
 
   /**
@@ -65,7 +82,7 @@ Page({
    * 页面相关事件处理函数--监听用户下拉动作
    */
   onPullDownRefresh: function () {
-
+    console.log("onPullDownRefresh")
   },
 
   /**
@@ -80,5 +97,36 @@ Page({
    */
   onShareAppMessage: function () {
 
+  },
+
+  onPageScroll(obj) {
+    // console.log(obj)
+  },
+  onReachBottom() {
+    console.log("滚动搭配都着急哦")
+  },
+  sekectImage() {
+    wx.chooseImage({
+      success: function(res) {
+        console.log(res)
+      },
+    })
+  },
+
+  loadComplete() {
+    console.log("图片加载完成")
+  },
+  bindinput(event) {
+    console.log("用户输入内容：" ,event.detail.value)
+  },
+  bindfocus(event) {
+    console.log("获得焦点", event)
+  },
+  bindblur(event) {
+    console.log("失去焦点", event)
+  },
+
+  bindScroll(event) {
+    console.log("开始滚动", event)
   }
 })
