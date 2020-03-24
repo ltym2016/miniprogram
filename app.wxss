@@ -1,0 +1,4 @@
+.globalStyle{
+  color: green;
+  font-size: 30 px
+}

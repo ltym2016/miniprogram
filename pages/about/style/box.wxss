@@ -1,0 +1,12 @@
+
+.box{
+  height: 100px;
+  width: 100px;
+  background: goldenrod
+}
+
+.box1 {
+  height: 200rpx;
+  width: 200rpx;
+  background: greenyellow
+} 

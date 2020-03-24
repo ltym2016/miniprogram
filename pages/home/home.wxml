@@ -63,5 +63,8 @@
    <view wx:for="{{10}}" class="item2">{{item}}</view>
 
 </scroll-view>
+
+
 <view>------------获取网络数据-------------</view>
-<view wx:for="{{newlist}}">{{item.title}}</view>
+<view wx:for="{{newlist}}" wx:for-item="content">{{content.title}} {{index}}</view>
+

@@ -5,13 +5,23 @@ Page({
    * 页面的初始数据
    */
   data: {
-
+    firstName:"Lu",
+    lastName:"ys",
+    newTime: new Date().toLocaleString(),
+    age:9,
+    isActive:false,
+    score:50
   },
 
   /**
    * 生命周期函数--监听页面加载
    */
   onLoad: function (options) {
+    setInterval(()=>{
+      this.setData({
+        newTime: new Date().toLocaleString()
+      })
+    }, 1000)
 
   },
 
@@ -62,5 +72,17 @@ Page({
    */
   onShareAppMessage: function () {
 
+  },
+
+  clikSwitchColor() {
+    console.log("-------")
+    this.setData({
+      isActive: !this.data.isActive
+    })
+  },
+  addScore(){
+    this.setData({
+      score:this.data.score+6
+    })
   }
 })

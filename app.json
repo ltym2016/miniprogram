@@ -12,20 +12,22 @@
     "enablePullDownRefresh": true
   },
   "tabBar": {
-
     "selectedColor": "#ff5777",
-    "list": [{
-      "pagePath": "pages/home/home",
-      "text": "首页",
-      "iconPath": "images/ic_home.png",
-      "selectedIconPath": "images/ic_home_select.png"
-    },
-    {
-      "pagePath": "pages/about/about",
-      "text": "消息",
-      "iconPath": "images/ic_message.png",
-      "selectedIconPath": "images/ic_message_select.png"
-    }],
-    "position":"bottom"
-  }
+    "list": [
+      {
+        "pagePath": "pages/home/home",
+        "text": "首页",
+        "iconPath": "images/ic_home.png",
+        "selectedIconPath": "images/ic_home_select.png"
+      },
+      {
+        "pagePath": "pages/about/about",
+        "text": "样式",
+        "iconPath": "images/ic_message.png",
+        "selectedIconPath": "images/ic_message_select.png"
+      }
+    ],
+    "position": "bottom"
+  },
+  "sitemapLocation": "sitemap76.json"
 }

@@ -1,1 +1,18 @@
 /* pages/about/about.wxss */
+@import "./style/box.wxss";
+
+
+.pageStyle{
+  color: blue;
+  font-size: 21px
+}
+.titleBg{
+  background: gray
+}
+.textStyle{
+  color: red
+}
+
+.textStyle2{
+  color: blue
+}

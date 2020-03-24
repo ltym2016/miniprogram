@@ -1,2 +1,43 @@
 <!--pages/about/about.wxml-->
-<text>关于</text>
+<view class="titleBg">设置样式的三种方式</view>
+
+<view style="color:red;font-size:21px">1.行内样式style</view>
+<view class="pageStyle">2.页内样式class</view>
+<view class="globalStyle">3.全局样式app.wxss</view>
+<view style="color:blueviolet;font-size:21px" class="globalStyle">4.行内样式>页面样式>全局样式 </view>
+
+<view class="titleBg">rpx  iphone6 1px=2rpx</view>
+<view class="box"></view>
+<view class="box1"></view>
+
+<view class="titleBg">Mustache 语法</view>
+<view>{{firstName}} {{lastName}}</view>
+<view>{{firstName+" "+lastName}}</view>
+<view>{{age>=18 ? "成年":"未成年"}}</view>
+<view>{{newTime}}</view>
+
+<button size="mini" bindtap="clikSwitchColor">点击变色</button>
+<view class="textStyle {{isActive ? 'textStyle2':''}}">颜色变化</view>
+
+
+<view class="titleBg">wx:if 和hidden</view>
+<button size="mini" bindtap="addScore">点击增加分数</button>
+<view wx:if="{{score>=90}}">优秀</view>
+<view wx:elif="{{score>=80}}">良好</view>
+<view wx:elif="{{score>=60}}">及格</view>
+<view wx:else>及格</view>
+
+
+<view wx:if="{{false}}">我是通过wx:if控制隐藏</view>
+<view hidden="{{true}}">我是通过hidden控制隐藏</view>
+
+
+<view>------------block标签-------------</view>
+<block wx:for="{{2}}" wx:key="key">
+  <view>哈哈</view>
+  <button size="mini">按钮</button>
+  <view>呵呵呵</view>
+</block >
+
+<view class="titleBg">地图</view>
+<map longitude="119.99" latitude="31.81"></map>
