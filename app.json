@@ -3,7 +3,7 @@
     "pages/home/home",
     "pages/about/about"
   ],
-  "window": {
+  "window": {  
     "navigationBarBackgroundColor": "#ff5777",
     "navigationBarTextStyle": "white",
     "navigationBarTitleText": "我的小程序",

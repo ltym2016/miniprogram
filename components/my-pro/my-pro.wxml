@@ -1,0 +1,3 @@
+<!--components/my-pro/my-pro.wxml-->
+<view class="title-class">{{title}}</view>
+<view class="content">{{content}}</view>

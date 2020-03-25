@@ -1,4 +1,24 @@
 <!--pages/home/home.wxml-->
+<my-tab titles="{{['推荐','疫情','NBA','娱乐']}}"
+        bind:itemClick="itemClick"/>
+
+<view>------------slot----------------</view>
+<my-slot>
+   <button size="mini">我是插入的按钮（单个插槽的使用）</button>
+</my-slot>
+
+<my-slot>
+   <text>我是插入的按钮（单个插槽的使用）</text>
+</my-slot>
+
+
+<my-mslot>
+   <button size="mini" slot="slot2">我是插入按钮</button>
+   <text slot="slot1">我是插入文本</text>
+   <slider slot="slot3"/>
+</my-mslot>
+
+<view>------------mustache----------------</view>
 <!-- 1.数据绑定 {{}}  mustache -->
 <view>hello {{1 +20}}</view>
 
@@ -52,7 +72,12 @@
 <view>------------scroll-view 水平滚动-------------</view>
 <scroll-view class="container1" scroll-x>
    
-   <view wx:for="{{10}}" class="item1">{{item}}</view>
+   <view wx:for="{{10}}"
+         wx:key="{{index}}"
+         class="item1"
+         bind:tap="clickItem"
+         data-item="{{item}}"
+         data-index="{{index}}">{{item}}</view>
 
 </scroll-view>
 <view>------------scroll-view 垂直滚动-------------</view>
@@ -66,5 +91,27 @@
 
 
 <view>------------获取网络数据-------------</view>
-<view wx:for="{{newlist}}" wx:for-item="content">{{content.title}} {{index}}</view>
+<view wx:for="{{newlist}}"
+      wx:key="index"
+      wx:for-item="content">
+      <my-pro title="{{content.title}}" title-class="green"/>
+</view>
 
+<!-- <my-pro title="HAH" title-class="red2"/> -->
+
+<view class="view1" capture-bind:tap="handleCaptureView1" catchtap="handleView1">
+    <view class="view2" capture-bind:tap="handleCaptureView2" catchtap="handleView2">
+      <view class="view3" capture-bind:tap="handleCaptureView3" catchtap="handleView3"></view>
+    </view>
+</view>
+
+<mycpn/>
+
+<!-- <my-pro title="我是标题" content="我是传递的内容参数"/>
+<my-pro title="我是标题但是没有内容"/>
+<my-pro content="我是传递的内容参数但是没有传递标题"/> -->
+<view>当前计数：{{counter}}</view>
+<my-event bind:add-one="clickAddOne"/>
+
+<my-sel class="sel-class"/>
+<button bind:tap="clickAddNum">点击增加</button>

@@ -16,7 +16,8 @@ Page({
       { id: 4, name: "lius4", age: 14 }
     ],
     count:0,
-    newlist:[]
+    newlist:[],
+    counter:0
   },
 
   btnClick(event) {
@@ -128,5 +129,54 @@ Page({
 
   bindScroll(event) {
     console.log("开始滚动", event)
+  },
+
+  clickItem(e) {
+    const dataset = e.currentTarget.dataset
+    console.log(dataset.index, dataset.item)
+  },
+
+  handleCaptureView1() {
+    console.log("handleCaptureView1")
+  },
+
+  handleCaptureView2() {
+    console.log("handleCaptureView2")
+  },
+
+  handleCaptureView3() {
+    console.log("handleCaptureView3")
+  },
+
+  handleView1(){
+    console.log("handleView1")
+  },
+  handleView2() {
+    console.log("handleView2")
+  },
+  handleView3() {
+    console.log("handleView3")
+  },
+  clickAddOne(event) {
+    console.log("00-----", event)
+    this.setData({
+      counter: this.data.counter+1
+    })
+  },
+  itemClick(e){
+    console.log(e.detail.name)
+    wx.showToast({
+      title: e.detail.name,
+      icon: 'none',
+      duration: 2000
+    })
+  },
+  clickAddNum() {
+    const mySel = this.selectComponent(".sel-class");
+    // mySel.setData({
+    //   counter:mySel.data.counter + 20
+    // })
+
+    mySel.addNum(30)
   }
 })

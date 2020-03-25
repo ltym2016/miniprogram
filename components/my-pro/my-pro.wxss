@@ -1,0 +1,11 @@
+/* components/my-pro/my-pro.wxss */
+.t{
+  font-size: 40rpx;
+  color: red;
+  font-weight: 700
+}
+
+.content{
+  font-size: 30rpx;
+  color: blue
+}

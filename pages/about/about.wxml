@@ -27,9 +27,20 @@
 <view wx:elif="{{score>=60}}">及格</view>
 <view wx:else>及格</view>
 
-
 <view wx:if="{{false}}">我是通过wx:if控制隐藏</view>
 <view hidden="{{true}}">我是通过hidden控制隐藏</view>
+
+
+
+<view>------------template-------------</view>
+
+<!-- <template name="temp">
+  <button size="mini">{{btnText}}</button>
+  <text>{{content}}</text>
+</template> -->
+
+<import src="./template/temp.wxml"/>
+<template is="temp" data="{{btnText:'点击temp', content:'haha'}}"/>
 
 
 <view>------------block标签-------------</view>
@@ -41,3 +52,11 @@
 
 <view class="titleBg">地图</view>
 <map longitude="119.99" latitude="31.81"></map>
+
+<view>------------wxs-------------</view>
+<!-- 不能使用绝对路径，只能使用相对路径 -->
+<wxs src="../../wxs/info.wxs" module="wxsInfo"></wxs>
+<view>{{wxsInfo.rmessage}}</view>
+<view>{{wxsInfo.rname}}</view>
+<view>{{wxsInfo.rsum(10,20)}}</view>
+<view>{{wxsInfo.priceFormat(26.666666,2)}}</view>

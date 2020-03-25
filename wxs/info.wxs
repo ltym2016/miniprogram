@@ -1,0 +1,19 @@
+
+var message = "hello world";
+var name = "Luys";
+var sum = function (n1, n2) {
+  return n1 + n2;
+};
+
+function priceFormat(price,number) {
+  var number = number||2;
+  return price.toFixed(number)
+}
+
+module.exports = {
+  rmessage: message,
+  rname: name,
+  rsum: sum,
+  priceFormat: priceFormat
+}
+

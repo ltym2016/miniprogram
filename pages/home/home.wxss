@@ -48,3 +48,30 @@ input{
   background: blue;
   margin:10px;
 }
+.view1{
+  width:200rpx;
+  height: 200rpx;
+  background: crimson
+}
+
+.view2{
+  width:160rpx;
+  height: 160rpx;
+  background: yellow
+}
+
+.view3{
+  width:120rpx;
+  height: 120rpx;
+  background: blue
+}
+
+
+.blue{
+  color: blue
+}
+.green{
+  color: green;
+  font-size: 40rpx;
+  font-weight: 800
+}
