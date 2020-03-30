@@ -1,0 +1,5 @@
+{
+  "usingComponents": {
+    "my-pro": "/components/my-pro/my-pro"
+  }
+}

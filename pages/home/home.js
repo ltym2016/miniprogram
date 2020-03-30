@@ -1,4 +1,4 @@
-
+import request from "../../http/http.js"
 const app = getApp()
 
 // pages/home/home.js
@@ -17,7 +17,8 @@ Page({
     ],
     count:0,
     newlist:[],
-    counter:0
+    counter:0,
+    content:"哈哈"
   },
 
   btnClick(event) {
@@ -40,15 +41,25 @@ Page({
    * 生命周期函数--监听页面加载
    */
   onLoad: function (options) {
-    wx.request({
-      url: 'http://job.wdwfrh.cn/api/partjob/index',
-      success:(res)=>{
-        console.log(res)
-        this.setData({
-          newlist : res.data.data.list
-        })
-      }
-    })
+    // wx.request({
+    //   url: 'http://job.wdwfrh.cn/api/partjob/index',
+    //   success:(res)=>{
+    //     console.log(res)
+    //     this.setData({
+    //       newlist : res.data.data.list
+    //     })
+    //   }
+    // })
+
+    // request({
+    //   url:"http://job.wdwfrh.cn/api/partjob/index"
+    // }).then(res=>{
+    //   this.setData({
+    //     newlist : res.data.data.list
+    //   })
+    // }).catch(err=>{
+    //   console.log(err)
+    // })
     
   },
 

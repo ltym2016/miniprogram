@@ -1,0 +1,19 @@
+<!--pages/detail/detail.wxml-->
+<video class="video_class" src="{{video_url}}"></video>
+
+<view class="share_style"> 
+    <text class="share_num">{{share_num}}人已分享</text>
+    <button class="btn_share" size="mini">
+        <image src="/images/ic_forward.png"></image>
+        <text>分享给好友</text>
+    </button>
+</view>
+
+<view>猜你喜欢</view>
+
+<view class="guess_item" wx:for="{{10}}">
+  
+  <image class="item_image" src="https://manhua-headimg-1251500554.file.myqcloud.com/1194867474529521664.jpg"/>
+  <text>标题标题题标题题标题题标题题标题题标题题标题题标题题标题</text>
+
+</view>

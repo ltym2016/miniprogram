@@ -1,0 +1,11 @@
+<!--components/j-tab/j-tab.wxml-->
+<scroll-view class="tab_scroll" scroll-x>
+   <block wx:for="{{title_list}}"
+         wx:key="{{index}}">
+         <text class="tab_text {{currentIndex==index? 'select' : ''}}"
+               bind:tap="clickItem"
+               data-item="{{item}}"
+               data-index="{{index}}">{{item}}</text>
+    </block>
+</scroll-view>
+

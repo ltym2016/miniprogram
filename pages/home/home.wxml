@@ -1,6 +1,34 @@
 <!--pages/home/home.wxml-->
-<my-tab titles="{{['推荐','疫情','NBA','娱乐']}}"
-        bind:itemClick="itemClick"/>
+
+<my-tab titles="{{['推荐','NBA','财经']}}"/>
+
+
+<!-- <view class="container">
+
+    <button class="inner" size="mini">按钮</button>
+    <text>333</text>
+    <!-- <text>标题标题标题标题标题标题标题标题标题标题标题标2题标题标题标题标题标题标题标题标题标题标题1</text>
+    <text>333</text> -->
+
+<!-- css flex布局 -->
+<view class="container3">
+  <view class="item item_1">1ewewqeqweeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeee</view>
+  <!-- <view class="item item_2">2</view>
+  <view class="item item_3">3</view>
+  <view class="item item_4">4</view>
+  <view class="item item_5">5</view>
+  <view class="item item_6">6</view> -->
+</view>
+
+
+<video class="class-video"           src="https://old-video-1251500554.cos.ap-shanghai.myqcloud.com/uploads/20200313/54b84a5e40a070b253e3c08c5642ba4b.mp4"></video>
+
+ 
+<navigator url="/pages/detail/detail?name=luys&age=18" open-type="navigate">跳转到详情页</navigator>
+
+<navigator url="/pages/net/net" open-type="switchTab">跳转switchTab</navigator>
+
+<view>{{content}}</view>
 
 <view>------------slot----------------</view>
 <my-slot>
@@ -91,11 +119,11 @@
 
 
 <view>------------获取网络数据-------------</view>
-<view wx:for="{{newlist}}"
+<!-- <view wx:for="{{newlist}}"
       wx:key="index"
       wx:for-item="content">
       <my-pro title="{{content.title}}" title-class="green"/>
-</view>
+</view> -->
 
 <!-- <my-pro title="HAH" title-class="red2"/> -->
 

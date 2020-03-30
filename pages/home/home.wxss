@@ -1,4 +1,7 @@
 /* pages/home/home.wxss */
+Page{
+  --my-font-color:blue;
+}
 .title{
   color:red;
   font-size: 30rpx
@@ -74,4 +77,67 @@ input{
   color: green;
   font-size: 40rpx;
   font-weight: 800
+}
+.class-video{
+  width: 100%
+}
+.container{
+  display: inline;
+  margin-left: 20rpx
+}
+
+.container text{
+  
+}
+.inner{
+  
+}
+
+.father{
+  height: 300rpx;
+  width: 300prx;
+  margin-top: 100rpx;
+  background: green;
+  position: relative
+}
+.sun{
+  height: 50rpx;
+  width: 50rpx;
+  background: blue;
+  position:absolute;
+  top:110rpx;
+  left: 200rpx;
+}
+.sun1{
+  height: 50rpx;
+  width: 50rpx;
+  background: blue;
+  position:fixed;
+  top:0rpx;
+  right: 0rpx;
+}
+
+.container3{
+  display: flex;
+  height: 200rpx;
+  flex-wrap: wrap;
+  border: 4rpx solid red;
+  align-content: flex-start
+  
+
+}
+.item{
+  background: green;
+  height: 50rpx;
+
+}
+
+.item_1{
+  flex-basis: 200rpx;
+}
+
+.item_2{
+  order: -1;
+  flex-grow: 2 
+
 }

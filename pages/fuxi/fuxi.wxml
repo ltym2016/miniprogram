@@ -1,0 +1,16 @@
+<!--pages/fuxi/fuxi.wxml-->
+<j-tab class="tab_class" title_list="{{title_list}}" bind:tabItemClick="tabItemClick"/>
+
+<scroll-view class="video_list">
+   
+  <view class="video_item" 
+        wx:for="{{video_list}}" 
+        wx:key="*this"
+        bind:tap="videoItemClick"
+        data-index="{{index}}">
+    <image class="image_cover"src="{{item.video_cover_image_text}}"/>
+    <image class="title_cover" src="/images/ic_shadow.png"/>
+    <text>{{item.video_title}}</text>
+  </view>
+
+</scroll-view>

@@ -60,6 +60,27 @@
 					"id": -1,
 					"name": "pages/about/about",
 					"pathName": "pages/about/about",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "pages/net/net",
+					"pathName": "pages/net/net",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "pages/fuxi/fuxi",
+					"pathName": "pages/fuxi/fuxi",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "pages/home/home",
+					"pathName": "pages/home/home",
 					"scene": null
 				}
 			]

@@ -1,0 +1,13 @@
+/* components/j-tab/j-tab.wxss */
+.tab_scroll{
+  white-space: nowrap;
+  background: white
+}
+.tab_text{
+  margin:10px;
+  display: inline-block
+}
+.select{
+  color: red;
+  border-bottom: 4rpx solid red
+}

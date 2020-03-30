@@ -1,0 +1,5 @@
+<!--pages/net/net.wxml-->
+<block wx:for="{{jobList}}"
+      wx:key="index">
+      <view>{{item.title}}</view>
+</block>

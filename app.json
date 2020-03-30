@@ -1,13 +1,18 @@
 {
   "pages": [
+
+    "pages/fuxi/fuxi",
     "pages/home/home",
-    "pages/about/about"
+    "pages/net/net",
+    "pages/about/about",
+    "pages/detail/detail",
+    "pages/comment/comment"
   ],
   "window": {  
     "navigationBarBackgroundColor": "#ff5777",
     "navigationBarTextStyle": "white",
     "navigationBarTitleText": "我的小程序",
-    "backgroundColor": "#000",
+    "backgroundColor": "#fff",
     "backgroundTextStyle": "dark",
     "enablePullDownRefresh": true
   },
@@ -15,10 +20,22 @@
     "selectedColor": "#ff5777",
     "list": [
       {
+        "pagePath": "pages/fuxi/fuxi",
+        "text": "福喜视界",
+        "iconPath": "images/ic_message.png",
+        "selectedIconPath": "images/ic_message_select.png"
+      },
+      {
         "pagePath": "pages/home/home",
         "text": "首页",
         "iconPath": "images/ic_home.png",
         "selectedIconPath": "images/ic_home_select.png"
+      },
+      {
+        "pagePath": "pages/net/net",
+        "text": "网络",
+        "iconPath": "images/ic_message.png",
+        "selectedIconPath": "images/ic_message_select.png"
       },
       {
         "pagePath": "pages/about/about",

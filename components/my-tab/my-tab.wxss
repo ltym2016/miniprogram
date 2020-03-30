@@ -13,6 +13,7 @@
   
 }
 .active text{
+  width: 100rpx;
   border-bottom: 6rpx solid red;
-  padding: 20rpx 20rpx
+  padding: 20rpx 20rpx;
 }

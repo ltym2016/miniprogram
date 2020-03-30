@@ -5,7 +5,13 @@ App({
    */
   onLaunch: function () {
     console.log("当小程序初始化完成时，会触发 onLaunch（全局只触发一次）")
-    wx.getUserInfo({
+    // wx.getUserInfo({
+    //   success:function(res) {
+    //     console.log(res)
+    //   }
+    // })
+    wx.login({
+      // code只有5分钟的有效期
       success:function(res) {
         console.log(res)
       }

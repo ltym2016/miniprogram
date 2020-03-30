@@ -1,0 +1,47 @@
+/* pages/fuxi/fuxi.wxss */
+.tab_class{
+  position: fixed;
+  top: 0;
+  left:0;
+  right: 0;
+  z-index: 2
+}
+.video_list{
+  margin-top: 88rpx;
+  z-index: 1
+}
+.video_item{
+  margin-top: 10rpx;
+  position: relative;
+  height: 414rpx;
+}
+.image_cover{
+  width: 92%;
+  height: 414rpx;
+  margin-left: 30rpx;
+  margin-right: 30rpx;
+  border-radius: 10rpx;
+}
+.title_cover{
+
+  position:absolute; 
+  bottom:0; 
+  left:0;
+  right: 0;
+  width: 92%;
+  height: 140rpx;
+  margin-left: 30rpx;
+  margin-right: 30rpx;
+  border-radius: 10rpx;
+}
+.video_item text{
+  position:absolute; 
+  bottom:0; 
+  left:0;
+  right: 0;
+  color:white;
+  text-align: bottom;
+  margin-left: 30rpx;
+  margin-right: 30rpx;
+  padding: 30rpx
+}
