@@ -1,0 +1,48 @@
+/* pages/template/template.wxss */
+Page{
+  background: #343638
+}
+
+.back{
+  background: white;
+  opacity: 0.48;
+  height: 56rpx;
+  width: 160rpx;
+  border-radius: 28rpx;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: fixed;
+  left: 20rpx;
+}
+
+.back text{
+  font-size: 13px
+}
+
+.template-item{
+  display: flex;
+  flex-direction: column;
+  margin-top: 32rpx;
+}
+
+.template{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  margin-left: 40rpx;
+  margin-right: 40rpx;
+  justify-content: space-between;
+  margin-top: 130rpx;
+}
+
+.template-item image{
+  width: 320rpx;
+  height: 490rpx;
+  border-radius: 10rpx;
+}
+.template-item text{
+  font-size: 13px;
+  color: white;
+  margin-top: 17rpx;
+}

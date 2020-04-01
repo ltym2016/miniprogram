@@ -1,0 +1,26 @@
+<!--pages/blessing/blessing.wxml-->
+<view>
+   <image src="{{background}}" class="bottom_image" mode="aspectFill"/>
+</view>
+
+<view class="backIndex box-flex flex-middle flex-center" style='height:{{navH}}px;top:{{navT}}px'>
+   <image mode="aspectFit" class="iconIndex" src="../../images/indexBack.png"></image>
+   首页
+</view>
+
+
+
+<view class="bottom_button">
+   <image class="button_size" src="/images/i_cphoto.png" bind:tap="chooseWxImageShop"/>
+   <image class="button_size" src="/images/i_send.png"/>
+</view>
+
+<view class="button_change">
+   <image animation="{{animationData}}" class="change_size" src="/images/i_dot.png"/>
+   <image animation="{{animationData}}" 
+          class="change_size" 
+          src="/images/i_ctemplate.png"
+          bind:tap="changeTemplate"/>
+</view>
+
+

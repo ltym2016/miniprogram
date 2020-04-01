@@ -1,0 +1,441 @@
+/**index.wxss**/
+
+page {
+}
+
+.backIndex {
+  width: 160rpx;
+  font-size: 26rpx；color：#181818;
+  background: rgba(255, 255, 255, 0.7);
+  border-radius: 60rpx;
+  -webkit-border-radius: 60rpx;
+  overflow: hidden;
+  position: fixed;
+  left: 20rpx;
+  z-index: 99;
+}
+
+.backIndex .iconIndex {
+  width: 27rpx;
+  height: 28rpx;
+  margin-right: 10rpx;
+}
+
+.swiperBox {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  left: 0px;
+  top: 0px;
+}
+
+.baswiper {
+  width: 100%;
+  height: 100%;
+}
+
+.swiper-item {
+  width: 100%;
+  height: 100%;
+  position: relative;
+}
+
+.swiper-item .bg {
+  width: 100%;
+  height: 100%;
+  position: relative;
+  z-index: 2;
+}
+
+.swiperBox .photo {
+  position: absolute;
+  z-index: 1;
+  transform: scale(1.1);
+  -webkit-transform: scale(1.1);
+  opacity: 0;
+}
+
+.swiperBox .photo.animate {
+  animation: animatePhoto 3s infinite, opacity1 3s forwards;
+  -webkit-animation: animatePhoto 3s infinite, opacity1 3s forwards;
+}
+
+.swiperBox .photo image {
+  width: 100%;
+  height: 100%;
+}
+
+.swiperBox .photoCover {
+  position: absolute;
+  z-index: 2;
+  opacity: 1;
+}
+
+.swiperBox .photoCover image {
+  width: 100%;
+  height: 100%;
+}
+
+.swiperBox .photoCover.animate {
+  animation: opacity2 2s 3s ease forwards;
+  -webkit-animation: opacity2 2s 3s ease forwards;
+}
+
+.operateBox {
+  padding: 0 50rpx;
+  position: fixed;
+  left: 0px;
+  bottom: 126rpx;
+  width: 100%;
+  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  z-index: 99;
+}
+
+.operateBox .btn1 {
+  width: 120rpx;
+  height: 120rpx;
+  cursor: pointer;
+}
+
+.operateBox .btn2 {
+  width: 280rpx;
+  height: 120rpx;
+  cursor: pointer;
+  padding: 0px;
+  background: 0 none;
+}
+
+.operateBox .btn1 image {
+  width: 100%;
+  height: 100%;
+  cursor: pointer;
+}
+
+.operateBox .btn2 image {
+  width: 100%;
+  height: 100%;
+  cursor: pointer;
+}
+
+.operateBox .operabot {
+  margin-top: 88rpx;
+}
+
+.operateBox .btnDot {
+  animation: enlarge 1s infinite;
+  -webkit-animation: enlarge 1s infinite;
+}
+
+.operateBox .btnChange {
+  animation: Animatechange 2s infinite;
+  -webkit-animation: Animatechange 2s infinite;
+}
+
+@keyframes enlarge {
+  0% {
+    -webkit-transform: scale(1);
+    transform: scale(1);
+  }
+
+  50% {
+    -webkit-transform: scale(1.1);
+    transform: scale(1.1);
+  }
+
+  100% {
+    -webkit-transform: scale(1);
+    transform: scale(1);
+  }
+}
+
+@-webkit-keyframes enlarge {
+  0% {
+    -webkit-transform: scale(1);
+    transform: scale(1);
+  }
+
+  50% {
+    -webkit-transform: scale(1.1);
+    transform: scale(1.1);
+  }
+
+  100% {
+    -webkit-transform: scale(1);
+    transform: scale(1);
+  }
+}
+
+@keyframes Animatechange {
+  20% {
+    transform: scale(1.1);
+    -webkit-transform: scale(1.1);
+  }
+
+  60% {
+    transform: scale(0.9) translateY(-20px);
+    -webkit-transform: scale(0.9) translateY(-20px);
+  }
+
+  100% {
+    transform: scale(1);
+    -webkit-transform: scale(1);
+  }
+}
+
+@-webkit-keyframes Animatechange {
+  20% {
+    transform: scale(1.1);
+    -webkit-transform: scale(1.1);
+  }
+
+  60% {
+    transform: scale(0.9) translateY(-20px);
+    -webkit-transform: scale(0.9) translateY(-20px);
+  }
+
+  100% {
+    transform: scale(1);
+    -webkit-transform: scale(1);
+  }
+}
+
+.userInfo {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0px;
+  left: 0px;
+  z-index: 2;
+}
+
+.userInfo .ava {
+  width: 190rpx;
+  height: 190rpx;
+  margin: 180rpx auto 20rpx auto;
+  background: #fff;
+  border-radius: 190rpx;
+  -webkit-border-radius: 190rpx;
+  overflow: hidden;
+}
+
+.userInfo .ava image {
+  width: 190rpx;
+  height: 190rpx;
+}
+
+.userInfo .nickName {
+  text-align: center;
+}
+
+.message {
+  color: #ffd07e;
+  font-size: 46rpx;
+  margin-top: 40rpx;
+}
+
+.message label {
+  display: block;
+  text-align: center;
+  line-height: 55rpx;
+}
+
+.btnBox {
+  padding: 60rpx 116rpx;
+}
+
+.btnBox .navbtn {
+  background: #60b900;
+  display: block;
+  border-radius: 10rpx;
+  -webkit-border-radius: 10rpx;
+  overflow: hidden;
+  text-align: center;
+  height: 74rpx;
+  line-height: 74rpx;
+  font-size: 36rpx;
+  color: #fff;
+}
+
+.arrow {
+  position: fixed;
+  width: 51rpx;
+  height: 32rpx;
+  bottom: 30rpx;
+  left: 50%;
+  margin-left: -25.5rpx;
+  animation: transArrow 1s infinite;
+  -webkit-animation: transArrow 1s infinite;
+}
+
+.arrow image {
+  width: 51rpx;
+  height: 32rpx;
+}
+
+@keyframes transArrow {
+  0% {
+    bottom: 30rpx;
+    opacity: 1;
+  }
+
+  50% {
+    bottom: 80rpx;
+    opacity: 0;
+  }
+
+  100% {
+    bottom: 30rpx;
+    opacity: 0;
+  }
+}
+
+@-webkit-keyframes transArrow {
+  0% {
+    bottom: 30rpx;
+    opacity: 1;
+  }
+
+  50% {
+    bottom: 80rpx;
+    opacity: 0;
+  }
+
+  100% {
+    bottom: 30rpx;
+    opacity: 0;
+  }
+}
+
+@keyframes opacity1 {
+  0% {
+    opacity: 0;
+  }
+
+  50% {
+    opacity: 0.5;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
+
+@-webkit-keyframes opacity1 {
+  0% {
+    opacity: 0;
+  }
+
+  50% {
+    opacity: 0.5;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
+
+/*图片遮罩层渐渐隐藏*/
+
+@keyframes opacity2 {
+  0% {
+    opacity: 1;
+  }
+
+  50% {
+    opacity: 0.5;
+  }
+
+  100% {
+    opacity: 0;
+  }
+}
+
+@-webkit-keyframes opacity2 {
+  0% {
+    opacity: 1;
+  }
+
+  50% {
+    opacity: 0.5;
+  }
+
+  100% {
+    opacity: 0;
+  }
+}
+
+/*图片渐渐放大*/
+
+@keyframes animatePhoto {
+  0% {
+    transform: scale(1.1);
+    -webkit-transform: scale(1.1);
+  }
+
+  50% {
+    transform: scale(1);
+    -webkit-transform: scale(1);
+  }
+
+  100% {
+    transform: scale(1.1);
+    -webkit-transform: scale(1.1);
+  }
+}
+
+@-webkit-keyframes animatePhoto {
+  0% {
+    transform: scale(1.1);
+    -webkit-transform: scale(1.1);
+  }
+
+  50% {
+    transform: scale(1);
+    -webkit-transform: scale(1);
+  }
+
+  100% {
+    transform: scale(1.1);
+    -webkit-transform: scale(1.1);
+  }
+}
+
+
+.animation_test {
+  animation: Animatechange 2s infinite;
+  -webkit-animation: Animatechange 2s infinite;
+}
+
+.bottom_button{
+  display: flex;
+  justify-content: space-between;
+  padding-left: 57rpx;
+  padding-right: 57rpx;
+  position: absolute;
+  bottom: 126rpx;
+  left: 0;
+  right: 0;
+}
+.button_size {
+  width: 280rpx;
+  height: 120rpx;
+}
+.change_size{
+  width: 120rpx;
+  height: 120rpx;
+}
+.button_change{
+  display: flex;
+  justify-content: space-between;
+  padding-left: 57rpx;
+  padding-right: 57rpx;
+  position: absolute;
+  bottom: 334rpx;
+  left: 0;
+  right: 0;
+}
+.bottom_image{
+  width: 750rpx;
+  height: 1334rpx;
+}

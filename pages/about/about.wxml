@@ -1,4 +1,7 @@
 <!--pages/about/about.wxml-->
+
+<view class="iconfont icon-loading">加载图片</view>
+
 <view class="titleBg">设置样式的三种方式</view>
 
 <view style="color:red;font-size:21px">1.行内样式style</view>

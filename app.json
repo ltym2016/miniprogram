@@ -1,12 +1,13 @@
 {
   "pages": [
-
+    "pages/blessing/blessing",
     "pages/fuxi/fuxi",
     "pages/home/home",
     "pages/net/net",
     "pages/about/about",
     "pages/detail/detail",
-    "pages/comment/comment"
+    "pages/comment/comment",
+    "pages/template/template"
   ],
   "window": {  
     "navigationBarBackgroundColor": "#ff5777",
@@ -14,11 +15,19 @@
     "navigationBarTitleText": "我的小程序",
     "backgroundColor": "#fff",
     "backgroundTextStyle": "dark",
-    "enablePullDownRefresh": true
+    "enablePullDownRefresh": true,
+    "navigationStyle":"custom"
+  
   },
   "tabBar": {
     "selectedColor": "#ff5777",
     "list": [
+      {
+        "pagePath": "pages/blessing/blessing",
+        "text": "祝福圈子",
+        "iconPath": "images/ic_message.png",
+        "selectedIconPath": "images/ic_message_select.png"
+      },
       {
         "pagePath": "pages/fuxi/fuxi",
         "text": "福喜视界",
@@ -46,5 +55,8 @@
     ],
     "position": "bottom"
   },
-  "sitemapLocation": "sitemap76.json"
+  "sitemapLocation": "sitemap76.json",
+  "networkTimeout": {
+    "request": 50000
+  }
 }

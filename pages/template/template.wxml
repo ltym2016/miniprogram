@@ -1,0 +1,16 @@
+<!--pages/template/template.wxml-->
+<view class="back" style='height:{{navH}}px;top:{{navT}}px' bindtap="back">
+   <text>返回</text>
+</view>
+
+
+<view class="template">
+  <view class="template-item" 
+        wx:for="{{templates}}" 
+        wx:key="templates"
+        bind:tap="itemClick"
+        data-index="{{index}}">
+    <image src="{{item.background_image_url}}" mode="aspectFill"/>
+    <text>{{item.title}}</text>
+  </view>
+</view>

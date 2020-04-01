@@ -1,6 +1,9 @@
 /* pages/about/about.wxss */
 @import "./style/box.wxss";
 
+Page{
+  background: green
+}
 
 .pageStyle{
   color: blue;
