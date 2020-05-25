@@ -30,11 +30,11 @@ Page({
   _getListData(id){
     const page = this.data.page+1
     request({
-      url: "http://video.chuji.mobi/api/video/videolist",
+      url: "api/video/videolist",
       method: 'POST',
       data:{
         videocategory_id: id,
-        page: page,
+        page: 3,
         pagenum:10
       }
 
@@ -56,7 +56,7 @@ Page({
   _getTabData() {
     // 封装的网络请求
     request({
-      url: "http://video.chuji.mobi/api/videocategory/index",
+      url: "api/videocategory/index",
       method: 'POST'
 
     }).then(res => {

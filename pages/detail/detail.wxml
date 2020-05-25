@@ -3,7 +3,7 @@
 
 <view class="share_style"> 
     <text class="share_num">{{share_num}}人已分享</text>
-    <button class="btn_share" size="mini">
+    <button class="btn_share" size="mini" bind:tap="back">
         <image src="/images/ic_forward.png"></image>
         <text>分享给好友</text>
     </button>

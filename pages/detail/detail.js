@@ -22,7 +22,7 @@ Page({
 
   _getGuessData(id) {
     request({
-      url: "http://video.chuji.mobi/api/video/recommand",
+      url: "api/video/recommand",
       method: 'POST',
       data: {
         videocategory_id: id
@@ -41,7 +41,7 @@ Page({
 
   _getVideoDetailData(id) {
     request({
-      url: "http://video.chuji.mobi/api/video/detail",
+      url: "api/video/detail",
       method: 'POST',
       data: {
         video_id: id
@@ -78,6 +78,12 @@ Page({
    */
   onHide: function () {
 
+  },
+
+  back(){
+     wx.navigateBack({
+       
+     })
   },
 
   /**

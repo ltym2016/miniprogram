@@ -69,7 +69,7 @@ Page({
     })
     // 封装的网络请求
     request({
-      url: "http://video.chuji.mobi/api/video/videolist",
+      url: "api/video/videolist",
       method:'POST'
 
     }).then(res => {
